@@ -4,7 +4,7 @@ Project based on [laravel-reCAPTCHA](https://github.com/Dylanchouxd/laravel-reCA
 ## Installation
 
 ```
-composer require scyllaly/hcaptcha
+composer require rubensrocha/hcaptcha
 ```
 
 ## Laravel 5 and above
@@ -16,19 +16,19 @@ In `app/config/app.php` add the following :
 1- The ServiceProvider to the providers array :
 
 ```php
-Scyllaly\HCaptcha\HCaptchaServiceProvider::class,
+Rubensrocha\HCaptcha\HCaptchaServiceProvider::class,
 ```
 
 2- The class alias to the aliases array :
 
 ```php
-'HCaptcha' => Scyllaly\HCaptcha\Facades\HCaptcha::class,
+'HCaptcha' => Rubensrocha\HCaptcha\Facades\HCaptcha::class,
 ```
 
 3- Publish the config file
 
 ```ssh
-php artisan vendor:publish --provider="Scyllaly\HCaptcha\HCaptchaServiceProvider"
+php artisan vendor:publish --provider="Rubensrocha\HCaptcha\HCaptchaServiceProvider"
 ```
 
 ### Configuration
@@ -86,7 +86,7 @@ Add `'h-captcha-response' => 'required|captcha'` to rules array :
 
 ```php
 $validate = Validator::make(Input::all(), [
-	'h-captcha-response' => 'required|captcha'
+	'h-captcha-response' => 'required|HCaptcha'
 ]);
 
 ```
@@ -163,7 +163,7 @@ require_once "vendor/autoload.php";
 
 $secret  = 'CAPTCHA-SECRET';
 $sitekey = 'CAPTCHA-SITEKEY';
-$captcha = new \Scyllaly\HCaptcha\HCaptcha($secret, $sitekey);
+$captcha = new \Rubensrocha\HCaptcha\HCaptcha($secret, $sitekey);
 
 if (! empty($_POST)) {
     var_dump($captcha->verifyResponse($_POST['h-captcha-response']));
