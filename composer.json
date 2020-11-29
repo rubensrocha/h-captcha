@@ -25,5 +25,15 @@
         "psr-4": {
             "Rubensrocha\\HCaptcha\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rubensrocha\\HCaptcha\\HCaptchaServiceProvider"
+            ],
+            "aliases": {
+                "SolveMediaCaptcha": "Rubensrocha\\HCaptcha\\Facades\\HCaptcha"
+            }
+        }
     }
 }
