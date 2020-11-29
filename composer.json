@@ -1,5 +1,5 @@
 {
-    "name": "rubensrocha/hcaptcha",
+    "name": "rubensrocha/h-captcha",
     "description": "hCaptcha For Laravel",
     "keywords": ["hcaptcha", "captcha", "laravel", "laravel5", "laravel6", "laravel7", "laravel8"],
     "license": "MIT",
