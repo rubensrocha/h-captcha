@@ -32,7 +32,7 @@
                 "Rubensrocha\\HCaptcha\\HCaptchaServiceProvider"
             ],
             "aliases": {
-                "SolveMediaCaptcha": "Rubensrocha\\HCaptcha\\Facades\\HCaptcha"
+                "HCaptcha": "Rubensrocha\\HCaptcha\\Facades\\HCaptcha"
             }
         }
     }
