@@ -1,6 +1,6 @@
 <?php
 
-use Scyllaly\HCaptcha\HCaptcha;
+use Rubensrocha\HCaptcha\HCaptcha;
 
 class HCaptchaTest extends PHPUnit_Framework_TestCase
 {

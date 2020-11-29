@@ -4,7 +4,7 @@ Project based on [laravel-reCAPTCHA](https://github.com/Dylanchouxd/laravel-reCA
 ## Installation
 
 ```
-composer require rubensrocha/hcaptcha
+composer require rubensrocha/h-captcha
 ```
 
 ## Laravel 5 and above

@@ -1,6 +1,6 @@
 <?php
 
-namespace Scyllaly\HCaptcha;
+namespace Rubensrocha\HCaptcha;
 
 use Illuminate\Support\ServiceProvider;
 

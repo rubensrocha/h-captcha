@@ -1,6 +1,6 @@
 <?php
 
-namespace Scyllaly\HCaptcha\Facades;
+namespace Rubensrocha\HCaptcha\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
